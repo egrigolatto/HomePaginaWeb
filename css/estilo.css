@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+        --color1: rgb(33,37,41);
+        --color2: rgb(234,234,234);
+        --color3: rgb(255,255,255);
+
+        --color8: rgb(25,39,52);
+        --color9: rgb(21,32,43);
+}
+body{
+    background-color: var(--color3);
+}
+main{
+    padding: 0px 5px;
+}
+header{
+    padding: 10px 200px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: 5px 5px 10px  var(--color1) ;
+    display: flex;
+}
+header h1{
+    font-size: 35px; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.enlaces-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+}
+a,h1,h3{
+   color: var(--color1);
+}
+ul{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+li{
+    padding: 8px 8px;
+    font-size: 1rem;
+}
+li:hover{
+
+    background-color: var(--color3);
+    box-shadow: 2px 2px 2px var(--color1);
+    /* text-decoration: underline; */
+}
+.iconos a{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.iconos a:hover{
+    color: var(--color3);
+}
+
+section{
+    padding: 100px 200px;
+    display: flex;
+}
+img{
+    width: 60%;
+    margin: 0px;
+    border-radius: 10px;
+    margin-left: 15px;
+    border: 2px solid var(--color1);
+    box-shadow: 10px 10px 10px var(--color1);
+}
+.uno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.dos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin-right: 20px;
+    
+}
+.uno1{
+    margin-bottom: 30px;
+}
+.uno2{
+    width: 60%;
+    text-align: center;
+    margin-left: 15px;
+}
+.uno2 h1{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.uno2 i{
+    margin: 7px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+.dos1 h3{
+   font-size: 2.5rem;
+}
+.dos1 h1{
+    font-size: 8rem;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 5px var(--color1) ;
+    margin-right: 10px;
+}
+.temas{
+    display: flex;
+    justify-content: center;
+}
+.button1{
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    margin-right: 80px;
+    background-color: var(--color3);
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+.button1:hover{
+    background-color: var(--color1);
+    transition: background 1s ease-in;
+    color: var(--color3);
+}
+.github{
+    font-size: 1.5rem;
+}
+.github:hover{
+    text-decoration: underline;
+}
+.tema1{
+    background-color: var(--color3);
+    cursor: pointer;
+}
+.tema2{
+    background-color: var(--color1);
+    cursor: pointer;
+}
+.tema3{
+    background-color: var(--color4);
+    cursor: pointer;
+}
+.tema4{
+    background-color: var(--color6);
+    cursor: pointer;
+}
+
+.botonDark{
+    font-size: 1.3rem;
+    margin-left: 50px;
+}
+.botonDark:hover{
+    color: var(--color3);
+}
+
+
+/* modo oscuro */
+
+.modoDark{
+    background-color: var(--color8);
+}
+.modoDark header{
+    background-color: var(--color9);
+    box-shadow: 5px 5px 10px  rgb(64, 64, 87) ;
+}
+.modoDark h1{
+    color: var(--color3);
+}
+.modoDark .dos1 h1{
+    text-shadow: 5px 5px 5px rgb(64, 64, 87) ;
+}
+.modoDark h3{
+    color: var(--color3);
+}
+.modoDark a{
+    color: var(--color3);
+}
+.modoDark .iconos a:hover{
+    color: rgb(64, 64, 87);
+}
+.modoDark .button1{
+    background-color: var(--color8);
+    color: var(--color3);
+    border: 2px solid var(--color3);
+}
+.modoDark .button1:hover{
+    background-color: var(--color3);
+    transition: background 1s ease-in;
+    color: var(--color9);
+}
+.modoDark img{
+    border: 2px solid var(--color3);
+    box-shadow: 10px 10px 10px rgb(64, 64, 87);
+}
+.modoDark .botonDark:hover{
+    color: rgb(64, 64, 87);
+}
+.modoDark .ham span{
+    background-color: var(--color3);
+}
+.modoDark li:hover{
+    background-color: var(--color8);
+    box-shadow: 2px 2px 2px rgb(64, 64, 87) ;
+}
+
+/* animacion */
+
+@keyframes escalaImagen{
+    0%{transform: scale(0);}
+    10%{transform: scale(0.1);}
+    20%{transform: scale(0.2);}
+    30%{transform: scale(0.3);}
+    40%{transform: scale(0.4);}
+    50%{transform: scale(0.5);}
+    60%{transform: scale(0.6);}
+    70%{transform: scale(0.7);}
+    80%{transform: scale(0.8);}
+    90%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+
+.uno, .dos, header{
+    animation-name: escalaImagen;
+    animation-duration: 0.25s;
+}
+
+
+.ham{
+    display: none; 
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:10px; 
+}
+.ham:hover{
+    transform:rotate(360deg);
+}
+.ham span{
+    background-color: var(--color1);
+    display:block;
+    height:3px;
+    width: 20px;
+    margin:5px auto;
+    border-radius:2px;    
+}
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+    margin-top: 50px;
+    align-items: flex-start; 
+}
+.iconos.activar{
+    display: flex;
+}
+.br-1.animado{
+    transform: rotate(-45deg) translate(-3.1px, 8px);
+}
+  
+.br-2.animado{
+    opacity: 0;
+}
+.br-3.animado{
+    transform: rotate(45deg) translate(-3.1px, -8px);
+}
+
+.ham.girar:hover{
+     transform:rotate(360deg);
+}
+
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* menu responsive */
+
+@media(min-width:200px) and (max-width:1295px){
+    header{
+    padding: 10px 100px;
+    }
+    section{
+        padding: 100px 100px;
+    }
+    .dos1 h3{
+        font-size: 2.3rem;
+     }
+     .dos1 h1{
+         font-size: 7rem;
+     }
+     .button1{
+        margin-right: 40px;
+     }
+
+}
+@media(min-width:200px) and (max-width:1215px){
+   
+
+}
+
+@media(min-width:200px) and (max-width:1035px){
+
+     .button1{
+        margin-right: 30px;
+        padding: 10px 30px;
+     }
+     section{
+        padding: 50px 100px;
+    }
+
+}
+@media(min-width:200px) and (max-width:990px){
+
+
+    .ham{
+        display: block;
+        transition: 0.2s  0.1s;
+    }
+    nav{
+        align-items: center;
+      
+        
+    }
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+        opacity: 0;
+    }
+    .iconos{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .button1{
+        margin-right: 20px;
+        padding: 10px 25px;
+    }
+    header{
+        /* background-color: brown; */
+    }
+    nav{
+        display: flex;
+        align-items: flex-start;
+     
+    }
+
+}
+@media(min-width:200px) and (max-width:930px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 50px;
+    
+    }
+    .uno, .dos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .uno1, .dos1{
+        text-align: center;
+    }
+    header{
+        padding: 10px 30px;
+    }
+}
+@media(min-width:200px) and (max-width:820px){
+    .dos1 h3{
+        font-size: 2.3rem;
+     }
+     .dos1 h1{
+         font-size: 6rem;
+     }
+
+}
+@media(min-width:200px) and (max-width:600px){
+    img{
+        width: 100%;
+    }
+}
+
+@media(min-width:200px) and (max-width:560px){
+    .button1{
+        margin-right: 15px;
+        padding: 8px 22px;
+    }
+    .github{
+        font-size: 1.2rem;
+    }
+    section{
+        padding: 30px 100px;
+    }
+    
+
+}
+@media(min-width:200px) and (max-width:508px){
+    .button1{
+        margin-right: 10px;
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    .github{
+        font-size: 1rem;
+    }
+    .dos1 h1{
+        font-size: 5rem;
+    }
+
+}
+@media(min-width:200px) and (max-width:455px){
+    .dos2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button1{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
