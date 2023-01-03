@@ -404,10 +404,10 @@ img{
 }
 @media(min-width:200px) and (max-width:820px){
     .dos1 h3{
-        font-size: 2rem;
+        font-size: 1.3rem;
      }
      .dos1 h1{
-         font-size: 4.5rem;
+         font-size: 3rem;
      }
 
 }
