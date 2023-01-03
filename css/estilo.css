@@ -16,7 +16,7 @@ body{
     background-color: var(--color3);
 }
 main{
-    padding: 0px 5px;
+    margin: 0px 15px;
 }
 header{
     padding: 10px 200px;
@@ -57,10 +57,8 @@ li{
     font-size: 1rem;
 }
 li:hover{
-
     background-color: var(--color3);
     box-shadow: 2px 2px 2px var(--color1);
-    /* text-decoration: underline; */
 }
 .iconos a{
     padding: 5px;
@@ -161,6 +159,7 @@ img{
     cursor: pointer;
 }
 
+/* modo oscuro */
 .botonDark{
     font-size: 1.3rem;
     margin-left: 50px;
@@ -168,9 +167,6 @@ img{
 .botonDark:hover{
     color: var(--color3);
 }
-
-
-/* modo oscuro */
 
 .modoDark{
     background-color: var(--color8);
@@ -240,7 +236,7 @@ img{
     animation-duration: 0.25s;
 }
 
-
+/* menu hamburquesa */
 .ham{
     display: none; 
     background-color:transparent;
@@ -262,7 +258,7 @@ img{
 }
 .enlaces-menu.activado{
     display: flex;
-    animation: muestraMenu 350ms ease-in-out both;
+    animation: muestraMenu 1s ease-in-out both;
     margin-top: 50px;
     align-items: flex-start; 
 }
@@ -368,8 +364,23 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px 50px;
-    
+        padding: 50px 0px;
+    }
+    .uno{
+        width: 100%;
+        
+        padding: 0;
+        margin: 0;
+    }
+    .dos{
+        width: 100%;
+      
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        padding-left: 0;
+        width: 50%;
     }
     .uno, .dos{
         width: 100%;
@@ -405,9 +416,14 @@ img{
 
 }
 @media(min-width:200px) and (max-width:600px){
-    img{
-        width: 100%;
-    }
+   li{
+    font-size: .8rem;
+    
+   }
+   .iconos a{
+    font-size: 1rem;
+   }
+
 }
 
 @media(min-width:200px) and (max-width:560px){
@@ -418,13 +434,10 @@ img{
     .github{
         font-size: 1.2rem;
     }
-    section{
-        padding: 30px 100px;
-    }
-    
+   
 
 }
-@media(min-width:200px) and (max-width:508px){
+@media(min-width:200px) and (max-width:540px){
     .button1{
         margin-right: 10px;
         padding: 8px 20px;
@@ -438,7 +451,7 @@ img{
     }
 
 }
-@media(min-width:200px) and (max-width:455px){
+@media(min-width:200px) and (max-width:485px){
     .dos2{
         display: flex;
         flex-direction: column;
