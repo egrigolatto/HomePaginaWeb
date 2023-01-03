@@ -126,7 +126,7 @@ img{
 .button1{
     padding: 10px 40px;
     font-size: 1.2rem;
-    margin-right: 80px;
+    margin-right: 65px;
     background-color: var(--color3);
     color: var(--color1);
     border: 2px solid var(--color1);
@@ -305,12 +305,8 @@ img{
      }
 
 }
-@media(min-width:200px) and (max-width:1215px){
-   
 
-}
-
-@media(min-width:200px) and (max-width:1035px){
+@media(min-width:200px) and (max-width:1045px){
 
      .button1{
         margin-right: 30px;
@@ -347,7 +343,7 @@ img{
         
     }
     .button1{
-        margin-right: 20px;
+        margin-right: 15px;
         padding: 10px 25px;
     }
     
@@ -411,7 +407,7 @@ img{
         font-size: 2rem;
      }
      .dos1 h1{
-         font-size: 4rem;
+         font-size: 6rem;
      }
 
 }
@@ -461,20 +457,13 @@ img{
     .button1{
         margin-bottom: 15px;
     }
-    .dos h3{
-        font-size: 1rem;
-    }
-    .dos h1{
-        font-size: 2rem;
-    }
+    
     .button1{
         margin-right: 5px;
         padding: 6px 10px;
         font-size: .9rem;
     }
-    .github{
-        font-size: .9rem;
-    }
+   
 }
 
 
