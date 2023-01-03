@@ -448,6 +448,20 @@ img{
     .button1{
         margin-bottom: 15px;
     }
+    .dos h3{
+        font-size: 1rem;
+    }
+    .dos h1{
+        font-size: 2rem;
+    }
+    .button1{
+        margin-right: 5px;
+        padding: 6px 10px;
+        font-size: .9rem;
+    }
+    .github{
+        font-size: .9rem;
+    }
 }
 
 
