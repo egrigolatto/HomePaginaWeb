@@ -126,7 +126,7 @@ img{
 .button1{
     padding: 10px 40px;
     font-size: 1.2rem;
-    margin-right: 65px;
+    margin-right: 50px;
     background-color: var(--color3);
     color: var(--color1);
     border: 2px solid var(--color1);
